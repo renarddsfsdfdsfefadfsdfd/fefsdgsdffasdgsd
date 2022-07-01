@@ -1,54 +1,71 @@
-<h1>INDUSTRIAL OF FASA</h1>
-<hr/>
-<html>
-
-<head> 
-
-<meta charset="UTF-8"> 
-
-<title>欢迎访问</title> 
-
-<style type="text/css">  
-
-.nav li{  
-
-background-color: rgb(15, 15, 15);  
-
- padding: 8px 15px;    
-
- float: left;   
-
- list-style: none;   
-
- color:#fff;  
-
-} 
-body{background-image: url(https://img0.baidu.com/it/u=1015869566,4005398725&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500);background-size: contain;}
-body{
-    display: flex;
-    height: 100%;
-}
-</style>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日程查询</title>
+    <style>
+       p{
+        font-family: '行楷';
+        font-size:20px;
+    }
+    body{background-image: url(https://img0.baidu.com/it/u=1015869566,4005398725&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500);background-size: contain;} 
+    </style>
 </head>
-
-<body> 
-
-<ul class="nav">  
-
-<li><a href='华夏认证最终版本.html'>华夏认证</a></li>  
-
-<li><a href="7.7日行程表最新版本.html">出行计划</a></li>  
-
-<li><a href='华夏重工反应训练最终版本.html'>反应训练</a></li>  
-
-<li><a href='华夏重工思维训练终版.html'>思维训练</a></li>  
-
-<li><a href='公司简介.html'>公司介绍</a></li> 
-<li><a href="http://bkk21.com/">反馈</a></li>
-
-</ul>
-
+<body>
+    <h1>七月七日出行行程计划检索系统</h1>
+<h1><button onclick="myFunction()">得知实时任务</button></body></h1>
+<p id="demo"></p>
+<hr/>
+<td><font color=#b56gy77>INDUSTRIAL OF FASA CALENDAR</font></td>
+<li><a href='FASA index.html'>返回</a></li>
+<script>
+function myFunction(){
+	var x="";
+	var time=new Date().getHours();
+       if (isNaN(time)||time>5){
+        x="系统尚未开启";
+     }
+     if (isNaN(time)||time>6){
+        x="准备洗漱，确定好所带钱包等物资的齐全（全部人）";
+     }
+     if (isNaN(time)||time>7){
+        x="再次确认物资齐全（全部人）,请张嘉俊先出发和其余二人再东莞庄五一小学校门口集合，请张耀霖同志出发";
+     }
+     if (isNaN(time)||time>8){
+        x="请三人组（第一阶段）立即前往目的地，请钟睿桓同志出发,请张耀霖同志汇报所在地点";
+     }
+     if (isNaN(time)||time>9){
+        x="请所有地面单位汇报自己所在位置";
+     }
+     if (isNaN(time)||time>10){
+        x="请各位同志相互认识";
+     }
+     if (isNaN(time)||time>11){
+        x="请各位同志出发前往中午吃饭地点,请各位同志到达吃饭地点";
+     }
+     if (isNaN(time)||time>12){
+        x="请各位同志迅速结束午餐前往图书馆并且核对图书馆预约信息";
+     }
+     if (isNaN(time)||time>13){
+        x="进入图书馆内部,认真寻找物理书籍";
+     }
+     if (isNaN(time)||time>15){
+        x="前往博物馆并且核对博物馆预约信息,进行参观，在适宜景点拍照以长时间保存灵感";
+     }
+     if (isNaN(time)||time>17){
+        x="前往晚餐地点,认真享受晚餐";
+     }
+     if (isNaN(time)||time>19){
+        x="各位结束晚餐，陆续回家";
+     }
+     if (isNaN(time)||time>20){
+        x="汇报平安到家的信息";
+     }
+//iaNaN会导致取数为整号所以所有时间要往后退一小时   
+     
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
 </body>
-
 </html>
